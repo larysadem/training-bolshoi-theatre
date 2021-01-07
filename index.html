@@ -5,9 +5,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Большой театр</title>
+    <link rel="stylesheet" href="./sass/main.scss">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
+    <header class="section header">
+        <div class="container">
+            <button class="mobile-mebu-button">
+                <svg width="26" height="20">
+                    <use href="./images/icon/sprite.svg#icon-mobile-menu">
+                </svg>
+            </button>
+            <ul class="list">
+                <li class="item">
+                    <a href="" class="link">Главная</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">О театре</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">Наши постановки</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">Партнеры театра</a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">Контакты</a>
+                </li>
+            </ul>
+            <a href="tel:+74951234567" class="link">+7 495 123-45-67</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="fixed-panel">
+            <p>Контактная информация</p>
+            <ul class="list">
+                <li class="item">
+                    <svg width="26" height="26">
+                        <use href="./images/icon/sprite.svg#icon-instagram">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="15" height="26">
+                        <use href="./images/icon/sprite.svg#icon-facebook">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="26" height="14">
+                        <use href="./images/icon/sprite.svg#icon-vk">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="26" height="18">
+                        <use href="./images/icon/sprite.svg#icon-youtube">
+                    </svg>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Большой театр</h1>
+            <p>Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская
+                консерватория.
+                Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в
+                Европе XVIII.</p>
+            <button>Афиша</button>
+            <div class="poster-slider">
+                <img src="./images/main/poster.jpg" srcset="./images/main/poster.jpg 1x, ./images/main/poster@2x.jpg 2x"
+                    alt="Афиша Ла Скала">
+                <img src="./images/main/poster.jpg" srcset="./images/main/poster.jpg 1x, ./images/main/poster@2x.jpg 2x"
+                    alt="Афиша Ла Скала">
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2>О театре</h2>
+            <h3>Самый лучший театр СПБ</h3>
+            <p>Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775
+                году по проекту
+                Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом
+                работ, Екатерина
+                II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый
+                проект театра,
+                который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783
+                году, хотя,
+                основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
+            <h3>Немного о цифрах</h3>
+            <ul class="list">
+                <li class="item">
+                    <svg width="70" height="70">
+                        <use href="./images/icon/sprite.svg#icon-armchair">
+                    </svg>
+                    <p>1600 посадочный мест</p>
+                </li>
+                <li class="item">
+                    <svg width="70" height="70">
+                        <use href="./images/icon/sprite.svg#icon-theater">
+                    </svg>
+                    <p>350 лет истории</p>
+                </li>
+            </ul>
+            <img src="./images/main/section-about-photo@2x.jpg"
+                srcset="./images/main/section-about-photo.jpg 1x, ./images/main/section-about-photo@2x.jpg 2x"
+                alt="Большой театр">
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <h2>Наши постановки</h2>
+            <ul class="list projects-list">
+                <li class="item">
+                    <img src="./images/main/projects-slider1.jpg" srcset="./images/main/projects-slider1.jpg 1x, 
+                    ./images/main/projects-slider1@2x.jpg 2x" alt="Оскар 2020">
+                    <h3>Оскар 2020</h3>
+                    <p>Сентябрь 2020</p>
+                </li>
+                <li class="item">
+                    <img src="./images/main/projects-slider2.jpg" srcset="./images/main/projects-slider2.jpg 1x, 
+                    ./images/main/projects-slider2@2x.jpg 2x" alt="Лебединое озеро">
+                    <h3>Лебединое озеро</h3>
+                    <p>Август 2020</p>
+                </li>
+                <li class="item">
+                    <img src="./images/main/projects-slider3.jpg" srcset="./images/main/projects-slider3.jpg 1x, 
+                    ./images/main/projects-slider3@2x.jpg 2x" alt="Золотой грамофон">
+                    <h3>Золотой грамофон</h3>
+                    <p>Июль 2020</p>
+                </li>
+                <li class="item">
+                    <img src="./images/main/projects-slider4.jpg" srcset="./images/main/projects-slider4.jpg 1x, 
+                    ./images/main/projects-slider4@2x.jpg 2x" alt="Щелкунчик">
+                    <h3>Щелкунчик</h3>
+                    <p>Май 2020</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="rating">
+        <div class="container">
+            <h2 class="visually-hidden">Рейтинг</h2>
+            <p>2018</p>
+            <p>2019</p>
+            <p>2020</p>
+            <ul class="stars-container list">
+                <li class="item">
+                    <svg width="24" height="22">
+                        <use href="./images/icon/sprite.svg#icon-star">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="24" height="22">
+                        <use href="./images/icon/sprite.svg#icon-star">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="24" height="22">
+                        <use href="./images/icon/sprite.svg#icon-star">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="24" height="22">
+                        <use href="./images/icon/sprite.svg#icon-star">
+                    </svg>
+                </li>
+                <li class="item">
+                    <svg width="24" height="22">
+                        <use href="./images/icon/sprite.svg#icon-star">
+                    </svg>
+                </li>
+            </ul>
+            <p>Лучший театр
+                по мнению театральных критиков Парижа</p>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <h2>Партнеры театра</h2>
+            <ul class="list">
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gazprom.ru/" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="link">
+                        <svg width="200" height="96">
+                            <use href="./images/icon/sprite.svg#icon-logo">
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h2>Стать меценатом</h2>
+            <form action="" class="form">
+                <button class="send">Отправить</button>
+            </form>
+            <address>
+                <a href="tel:+78121234555" class="link">+7 (812) 123-45-55</a>
+                <a href="tel:+78121234566" class="link">+7 (812) 123-45-66</a>
+                <a href="mailto:info@theater.ru" class="link">info@theater.ru</a>
+                <a href="https://goo.gl/maps/a7KTcsr3zgStc8RD8" class="link">г. Санкт-Петербург, Невский 140</a>
+            </address>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>(с) Все права защищены. Большой театр. 2020</p>
+            <p>Дизайн - d-e-n.ru</p>
+        </div>
+    </footer>
 
 </body>
 

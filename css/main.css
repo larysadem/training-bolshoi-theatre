@@ -1,0 +1,78 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-style: normal;
+  background-color: #333333;
+}
+
+.container {
+  padding-left: 33px;
+  padding-right: 33px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.mobile-mebu-button {
+  width: 40px;
+}
+
+.projects-list img {
+  width: 442px;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */
