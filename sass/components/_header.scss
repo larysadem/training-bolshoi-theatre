@@ -1,3 +1,37 @@
+.header-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .mobile-mebu-button {
   width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px transparent;
+}
+
+.phone {
+  color: $white;
+  position: relative;
+  padding-bottom: 5px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.375;
+  letter-spacing: 0.05em;
+}
+
+.header .phone::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $accent-color;
 }

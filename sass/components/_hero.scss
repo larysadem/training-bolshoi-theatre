@@ -1,0 +1,29 @@
+.hero-container {
+  padding-bottom: 107px;
+  padding-top: 107px;
+}
+
+.hero-title {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.36;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  height: 68px;
+}
+
+.hero-container .link {
+  color: $white;
+  background-color: $accent-color;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  padding: 13px 47px;
+}
