@@ -45,10 +45,34 @@
   margin-bottom: 30px;
   width: 190px;
   height: 50px;
-  //   text-align: center;
+
+  color: $white;
+  background-color: $accent-color;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
 }
 
 .form-button {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.form-label,
+.form-security-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+
+  color: $text-color;
+}
+
+.form-security-text {
+  font-weight: 400;
 }

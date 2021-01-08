@@ -1,0 +1,17 @@
+.header {
+  background-color: aquamarine;
+}
+
+.hero {
+  background-color: palevioletred;
+}
+
+.about {
+  background-color: slateblue;
+}
+
+*,
+*::before,
+*::after {
+  outline: 1px solid tomato;
+}

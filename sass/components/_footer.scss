@@ -1,0 +1,28 @@
+.footer-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  //   letter-spacing: 0.09em;
+
+  color: $text-color;
+}
+
+.footer-line {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.footer-line::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #565656;
+}
