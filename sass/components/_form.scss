@@ -1,0 +1,54 @@
+// .form-label {
+//   display: none;
+// }
+
+// .form-field:focus .form-label,
+// .form-field:focus .form-label {
+//   display: inline;
+// }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-field-message {
+  margin-bottom: 40px;
+}
+
+.form-input {
+  width: 230px;
+  height: 35px;
+  color: $white;
+  font-size: 12px;
+
+  background-color: $form-backgroung;
+  border: 1px solid $form-border;
+
+  padding-left: 15px;
+}
+
+.form-message {
+  width: 509px;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.button-send {
+  margin-bottom: 30px;
+  width: 190px;
+  height: 50px;
+  //   text-align: center;
+}
+
+.form-button {
+  text-align: center;
+  margin-bottom: 50px;
+}

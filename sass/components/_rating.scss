@@ -1,7 +1,40 @@
+.rating > .container {
+  display: flex;
+  align-items: center;
+
+  padding-top: 126px;
+  padding-bottom: 126px;
+}
+
+.rating-year {
+  margin-right: 24px;
+}
+
+.year-item {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: $accent-color;
+}
+
+.year-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
 .stars-container {
   display: flex;
+  margin-bottom: 25px;
 }
 
 .stars-container .item:not(:last-child) {
   margin-right: 20px;
+}
+
+.rating-text {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
 }

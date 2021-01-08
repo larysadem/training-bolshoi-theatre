@@ -15,7 +15,7 @@ body {
   font-style: normal;
   font-weight: 400;
   background-color: $bg-main;
-  //   letter-spacing: 0.03em;
+  letter-spacing: 0.1em;
 }
 
 h1,
@@ -54,7 +54,6 @@ p {
   font-size: 48px;
   line-height: 1.35;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 60px;
 }

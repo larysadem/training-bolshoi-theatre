@@ -125,26 +125,26 @@
                 <li class="item">
                     <img src="./images/main/projects-slider1.jpg" srcset="./images/main/projects-slider1.jpg 1x, 
                     ./images/main/projects-slider1@2x.jpg 2x" alt="Оскар 2020">
-                    <h3>Оскар 2020</h3>
-                    <p>Сентябрь 2020</p>
+                    <h3 class="project-name">Оскар 2020</h3>
+                    <p class="project-date">Сентябрь 2020</p>
                 </li>
                 <li class="item">
                     <img src="./images/main/projects-slider2.jpg" srcset="./images/main/projects-slider2.jpg 1x, 
                     ./images/main/projects-slider2@2x.jpg 2x" alt="Лебединое озеро">
-                    <h3>Лебединое озеро</h3>
-                    <p>Август 2020</p>
+                    <h3 class="project-name">Лебединое озеро</h3>
+                    <p class="project-date">Август 2020</p>
                 </li>
                 <li class="item">
                     <img src="./images/main/projects-slider3.jpg" srcset="./images/main/projects-slider3.jpg 1x, 
                     ./images/main/projects-slider3@2x.jpg 2x" alt="Золотой грамофон">
-                    <h3>Золотой грамофон</h3>
-                    <p>Июль 2020</p>
+                    <h3 class="project-name">Золотой грамофон</h3>
+                    <p class="project-date">Июль 2020</p>
                 </li>
                 <li class="item">
                     <img src="./images/main/projects-slider4.jpg" srcset="./images/main/projects-slider4.jpg 1x, 
                     ./images/main/projects-slider4@2x.jpg 2x" alt="Щелкунчик">
-                    <h3>Щелкунчик</h3>
-                    <p>Май 2020</p>
+                    <h3 class="project-name">Щелкунчик</h3>
+                    <p class="project-date">Май 2020</p>
                 </li>
             </ul>
         </div>
@@ -152,38 +152,44 @@
     <section class="rating">
         <div class="container">
             <h2 class="visually-hidden">Рейтинг</h2>
-            <p>2018</p>
-            <p>2019</p>
-            <p>2020</p>
-            <ul class="stars-container list">
-                <li class="item">
-                    <svg width="24" height="22">
-                        <use href="./images/icon/sprite.svg#icon-star">
-                    </svg>
-                </li>
-                <li class="item">
-                    <svg width="24" height="22">
-                        <use href="./images/icon/sprite.svg#icon-star">
-                    </svg>
-                </li>
-                <li class="item">
-                    <svg width="24" height="22">
-                        <use href="./images/icon/sprite.svg#icon-star">
-                    </svg>
-                </li>
-                <li class="item">
-                    <svg width="24" height="22">
-                        <use href="./images/icon/sprite.svg#icon-star">
-                    </svg>
-                </li>
-                <li class="item">
-                    <svg width="24" height="22">
-                        <use href="./images/icon/sprite.svg#icon-star">
-                    </svg>
-                </li>
-            </ul>
-            <p>Лучший театр
-                по мнению театральных критиков Парижа</p>
+            <div class="rating-year">
+                <ul class="list year-list">
+                    <li class="item year-item">2018</li>
+                    <li class="item year-item">2019</li>
+                    <li class="item year-item">2020</li>
+                </ul>
+            </div>
+            <div class="rating-opinion">
+                <ul class="stars-container list">
+                    <li class="item">
+                        <svg width="24" height="22">
+                            <use href="./images/icon/sprite.svg#icon-star">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="24" height="22">
+                            <use href="./images/icon/sprite.svg#icon-star">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="24" height="22">
+                            <use href="./images/icon/sprite.svg#icon-star">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="24" height="22">
+                            <use href="./images/icon/sprite.svg#icon-star">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="24" height="22">
+                            <use href="./images/icon/sprite.svg#icon-star">
+                        </svg>
+                    </li>
+                </ul>
+                <p class="rating-text">Лучший театр
+                    по мнению театральных критиков Парижа</p>
+            </div>
         </div>
     </section>
     <section class="partners" id="partners">
@@ -253,7 +259,41 @@
         <div class="container">
             <h2 class="title"><span class="first-word">Стать</span> меценатом</h2>
             <form action="" class="form">
-                <button class="send">Отправить</button>
+
+                <div class="form-field">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" name="name" id="name" class="form-input">
+                </div>
+
+                <div class="form-field">
+                    <label for="company" class="form-label">Компания</label>
+                    <input type="text" name="company" id="company" class="form-input">
+                </div>
+
+                <div class="form-field">
+                    <label for="telephone" class="form-label">Телефон</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Телефон" class="form-input">
+                </div>
+
+                <div class="form-field">
+                    <label for="mail" class="form-label">E-mail</label>
+                    <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-input">
+                </div>
+
+                <div class="form-field form-field-message">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea name="message" id="message" cols="20" rows="5" class="form-input form-message"></textarea>
+                </div>
+
+                <div class="form-button">
+
+                    <button type="submit" class="button-send">Отправить</button>
+                    <p class="form-security-text">* Ваши данные не будут переданы третьим лицам, 100% вероятность.
+                        Конфиденциальность мы гарантируем, и
+                        защищаем
+                        персональные данные согласно законку ФЗ-52.</p>
+                </div>
+
             </form>
             <address>
                 <a href="tel:+78121234555" class="link">+7 (812) 123-45-55</a>

@@ -16,6 +16,7 @@ body {
   font-style: normal;
   font-weight: 400;
   background-color: #333333;
+  letter-spacing: 0.1em;
 }
 
 h1,
@@ -62,7 +63,6 @@ p {
   font-size: 48px;
   line-height: 1.35;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 60px;
 }
@@ -174,7 +174,6 @@ p {
   font-size: 21px;
   line-height: 1.38;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -205,19 +204,71 @@ p {
   letter-spacing: 0.05em;
 }
 
+.project-name {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.375;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-date {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.39;
+  text-transform: uppercase;
+}
+
 .projects-list img {
   width: 442px;
   height: auto;
+}
+
+.rating > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 126px;
+  padding-bottom: 126px;
+}
+
+.rating-year {
+  margin-right: 24px;
+}
+
+.year-item {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #d1a954;
+}
+
+.year-item:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .stars-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .stars-container .item:not(:last-child) {
   margin-right: 20px;
+}
+
+.rating-text {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 .partners-list {
@@ -247,5 +298,58 @@ p {
 
 .partners-list .item:nth-last-child(-n + 4) {
   display: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-field-message {
+  margin-bottom: 40px;
+}
+
+.form-input {
+  width: 230px;
+  height: 35px;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #444444;
+  border: 1px solid #616161;
+  padding-left: 15px;
+}
+
+.form-message {
+  width: 509px;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.button-send {
+  margin-bottom: 30px;
+  width: 190px;
+  height: 50px;
+}
+
+.form-button {
+  text-align: center;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */
