@@ -433,6 +433,42 @@ img {
   position: relative;
 }
 
+.projects-list .item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(51, 51, 51, 0.65)), to(rgba(51, 51, 51, 0.65)));
+  background: linear-gradient(to right, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65));
+}
+
+.projects-list .item:hover::after,
+.projects-list .item:focus::after {
+  background: none;
+}
+
+.projects-list .item:hover:before,
+.projects-list .item:focus:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  background-color: #d1a954;
+  -webkit-transform: translate(-50px, -50px);
+          transform: translate(-50px, -50px);
+  border-radius: 50%;
+  background-image: url(/images/icon/search.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .project-name {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
@@ -460,6 +496,13 @@ img {
           transform: rotate(-90deg);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+}
+
+.projects-list .item:hover .project-name,
+.projects-list .item:focus .project-name,
+.projects-list .item:hover .project-date,
+.projects-list .item:focus .project-date {
+  display: none;
 }
 
 .rating > .container {
