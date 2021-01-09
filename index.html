@@ -15,75 +15,129 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <button class="mobile-mebu-button">
-                <svg width="26" height="20">
-                    <use href="./images/icon/sprite.svg#icon-mobile-menu">
-                </svg>
-            </button>
-            <ul class="list visually-hidden">
-                <li class="item">
-                    <a href="#" class="link">Главная</a>
-                </li>
-                <li class="item">
-                    <a href="#about" class="link">О театре</a>
-                </li>
-                <li class="item">
-                    <a href="#projects" class="link">Наши постановки</a>
-                </li>
-                <li class="item">
-                    <a href="#partners" class="link">Партнеры театра</a>
-                </li>
-                <li class="item">
-                    <a href="#contacts" class="link">Контакты</a>
-                </li>
-            </ul>
-            <a href="tel:+74951234567" class="link phone">+7 495 123-45-67</a>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="fixed-panel visually-hidden">
-            <p>Контактная информация</p>
-            <ul class="list">
-                <li class="item">
-                    <svg width="26" height="26">
-                        <use href="./images/icon/sprite.svg#icon-instagram">
+    <div class="header-hero">
+        <header class="header">
+            <div class="container header-container">
+                <button type="button" class="mobile-menu-button" data-menu-button>
+                    <svg width="26" height="20" class="button-open-icon">
+                        <use href="./images/icon/sprite.svg#icon-mobile-menu">
                     </svg>
-                </li>
-                <li class="item">
-                    <svg width="15" height="26">
-                        <use href="./images/icon/sprite.svg#icon-facebook">
+                    <svg width="16" height="16" class="button-close-icon">
+                        <use href="./images/icon/sprite.svg#icon-close">
                     </svg>
-                </li>
-                <li class="item">
-                    <svg width="26" height="14">
-                        <use href="./images/icon/sprite.svg#icon-vk">
-                    </svg>
-                </li>
-                <li class="item">
-                    <svg width="26" height="18">
-                        <use href="./images/icon/sprite.svg#icon-youtube">
-                    </svg>
-                </li>
-            </ul>
-        </div>
-        <div class="container hero-container">
-            <h1 class="hero-title">Большой театр</h1>
-            <p class="text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года —
-                Петербургская
-                консерватория.
-                Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в
-                Европе XVIII.</p>
-            <a href="#projects" class="link">Афиша</a>
-            <div class="poster-slider visually-hidden">
-                <img src="./images/main/poster.jpg" srcset="./images/main/poster.jpg 1x, ./images/main/poster@2x.jpg 2x"
-                    alt="Афиша Ла Скала">
-                <img src="./images/main/poster.jpg" srcset="./images/main/poster.jpg 1x, ./images/main/poster@2x.jpg 2x"
-                    alt="Афиша Ла Скала">
+                </button>
+                <ul class="list visually-hidden">
+                    <li class="item">
+                        <a href="#" class="link">Главная</a>
+                    </li>
+                    <li class="item">
+                        <a href="#about" class="link">О театре</a>
+                    </li>
+                    <li class="item">
+                        <a href="#projects" class="link">Наши постановки</a>
+                    </li>
+                    <li class="item">
+                        <a href="#partners" class="link">Партнеры театра</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contacts" class="link">Контакты</a>
+                    </li>
+                </ul>
+                <a href="tel:+74951234567" class="link contact phone-abs"><span class="header-phone">+7 495
+                        123-45-67</span></a>
             </div>
-        </div>
-    </section>
+
+            <div class="mobile-menu" data-menu>
+                <div class="mobile-menu-container">
+                    <ul class="list mobile-nav">
+                        <li class="item">
+                            <a href="#" class="link">Главная</a>
+                        </li>
+                        <li class="item">
+                            <a href="#about" class="link">О театре</a>
+                        </li>
+                        <li class="item">
+                            <a href="#projects" class="link">Наши постановки</a>
+                        </li>
+                        <li class="item">
+                            <a href="#partners" class="link">Партнеры театра</a>
+                        </li>
+                        <li class="item">
+                            <a href="#contacts" class="link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="list mobile-social-list">
+                        <div class="social-list-column">
+                            <li class="item">
+                                <svg width="26" height="45" class="social-icon">
+                                    <use href="./images/icon/sprite.svg#icon-facebook">
+                                </svg>
+                            </li>
+                            <li class="item">
+                                <svg width="45" height="45" class="social-icon">
+                                    <use href="./images/icon/sprite.svg#icon-instagram">
+                                </svg>
+                            </li>
+                        </div>
+                        <div class="social-list-column">
+                            <li class="item">
+                                <svg width="45" height="31" class="social-icon">
+                                    <use href="./images/icon/sprite.svg#icon-youtube">
+                                </svg>
+                            </li>
+                            <li class="item">
+                                <svg width="45" height="24" class="social-icon">
+                                    <use href="./images/icon/sprite.svg#icon-vk">
+                                </svg>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="fixed-panel visually-hidden">
+                <p>Контактная информация</p>
+                <ul class="list">
+                    <li class="item">
+                        <svg width="26" height="26" class="social-icon">
+                            <use href="./images/icon/sprite.svg#icon-instagram">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="15" height="26" class="social-icon">
+                            <use href="./images/icon/sprite.svg#icon-facebook">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="26" height="14" class="social-icon">
+                            <use href="./images/icon/sprite.svg#icon-vk">
+                        </svg>
+                    </li>
+                    <li class="item">
+                        <svg width="26" height="18" class="social-icon">
+                            <use href="./images/icon/sprite.svg#icon-youtube">
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="container hero-container">
+                <h1 class="hero-title">Большой театр</h1>
+                <p class="text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года —
+                    Петербургская
+                    консерватория.
+                    Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в
+                    Европе XVIII.</p>
+                <a href="#projects" class="link">Афиша</a>
+                <div class="poster-slider visually-hidden">
+                    <img src="./images/main/poster.jpg"
+                        srcset="./images/main/poster.jpg 1x, ./images/main/poster@2x.jpg 2x" alt="Афиша Ла Скала">
+                    <img src="./images/main/poster.jpg"
+                        srcset="./images/main/poster.jpg 1x, ./images/main/poster@2x.jpg 2x" alt="Афиша Ла Скала">
+                </div>
+            </div>
+        </section>
+    </div>
     <section class="about" id="about">
         <div class="container">
             <h2 class="title"><span class="first-word">О</span> театре</h2>
@@ -124,25 +178,25 @@
             <ul class="list projects-list">
                 <li class="item">
                     <img src="./images/main/projects-slider1.jpg" srcset="./images/main/projects-slider1.jpg 1x, 
-                    ./images/main/projects-slider1@2x.jpg 2x" alt="Оскар 2020">
+                    ./images/main/projects-slider1@2x.jpg 2x" alt="Оскар 2020" class="project-photo">
                     <h3 class="project-name">Оскар 2020</h3>
                     <p class="project-date">Сентябрь 2020</p>
                 </li>
                 <li class="item">
                     <img src="./images/main/projects-slider2.jpg" srcset="./images/main/projects-slider2.jpg 1x, 
-                    ./images/main/projects-slider2@2x.jpg 2x" alt="Лебединое озеро">
+                    ./images/main/projects-slider2@2x.jpg 2x" alt="Лебединое озеро" class="project-photo">
                     <h3 class="project-name">Лебединое озеро</h3>
                     <p class="project-date">Август 2020</p>
                 </li>
                 <li class="item">
                     <img src="./images/main/projects-slider3.jpg" srcset="./images/main/projects-slider3.jpg 1x, 
-                    ./images/main/projects-slider3@2x.jpg 2x" alt="Золотой грамофон">
+                    ./images/main/projects-slider3@2x.jpg 2x" alt="Золотой грамофон" class="project-photo">
                     <h3 class="project-name">Золотой грамофон</h3>
                     <p class="project-date">Июль 2020</p>
                 </li>
                 <li class="item">
                     <img src="./images/main/projects-slider4.jpg" srcset="./images/main/projects-slider4.jpg 1x, 
-                    ./images/main/projects-slider4@2x.jpg 2x" alt="Щелкунчик">
+                    ./images/main/projects-slider4@2x.jpg 2x" alt="Щелкунчик" class="project-photo">
                     <h3 class="project-name">Щелкунчик</h3>
                     <p class="project-date">Май 2020</p>
                 </li>
@@ -197,56 +251,56 @@
             <h2 class="title"><span class="first-word">Партнеры</span> театра</h2>
             <ul class="list partners-list">
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="https://www.gazprom.ru/" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="" class="link">
+                    <a href="https://www.gazprom.ru/" target="_blank" rel="noopener noreferer" class="link">
                         <svg width="200" height="96">
                             <use href="./images/icon/sprite.svg#icon-logo">
                         </svg>
@@ -258,6 +312,7 @@
     <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="title"><span class="first-word">Стать</span> меценатом</h2>
+
             <form action="" class="form">
 
                 <div class="form-field">
@@ -285,7 +340,7 @@
                     <textarea name="message" id="message" cols="20" rows="5" class="form-input form-message"></textarea>
                 </div>
 
-                <div class="form-button">
+                <div class="form-button-security">
 
                     <button type="submit" class="button-send">Отправить</button>
                     <p class="form-security-text">* Ваши данные не будут переданы третьим лицам, 100% вероятность.
@@ -295,11 +350,26 @@
                 </div>
 
             </form>
-            <address>
-                <a href="tel:+78121234555" class="link">+7 (812) 123-45-55</a>
-                <a href="tel:+78121234566" class="link">+7 (812) 123-45-66</a>
-                <a href="mailto:info@theater.ru" class="link">info@theater.ru</a>
-                <a href="https://goo.gl/maps/a7KTcsr3zgStc8RD8" class="link">г. Санкт-Петербург, Невский 140</a>
+
+            <address class="address-nav">
+                <ul class="list phone-list">
+                    <li class="item">
+                        <a href="tel:+78121234555" class="link contact">+7 (812) 123-45-55</a>
+                    </li>
+                    <li class="item">
+                        <a href="tel:+78121234566" class="link contact">+7 (812) 123-45-66</a>
+                    </li>
+                </ul>
+                <ul class="list address-list">
+                    <li class="item">
+                        <a href="mailto:info@theater.ru" class="link contact">info@theater.ru</a>
+                    </li>
+                    <li class="item">
+                        <a href="https://goo.gl/maps/a7KTcsr3zgStc8RD8" target="_blank" rel="noopener noreferer"
+                            class="link contact">г.
+                            Санкт-Петербург, Невский 140</a>
+                    </li>
+                </ul>
             </address>
         </div>
     </section>
@@ -310,6 +380,7 @@
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

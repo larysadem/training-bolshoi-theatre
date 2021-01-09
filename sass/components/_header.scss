@@ -1,29 +1,32 @@
 .header-container {
   padding-top: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.mobile-mebu-button {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: 1px transparent;
-}
-
-.phone {
-  color: $white;
   position: relative;
-  padding-bottom: 5px;
+  height: 90px;
+}
+
+.contact {
+  color: $white;
   font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.375;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.header .phone::after {
+.phone-abs {
+  position: absolute;
+  right: 33px;
+}
+
+.header-phone {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.header .header-phone::after {
   content: "";
 
   position: absolute;

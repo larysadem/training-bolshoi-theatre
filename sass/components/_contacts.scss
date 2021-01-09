@@ -1,0 +1,13 @@
+.address-nav {
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-nav .list .item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.address-list {
+  text-align: right;
+}

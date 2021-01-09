@@ -26,25 +26,19 @@ p {
 }
 
 .container {
-  padding-left: 33px;
-  padding-right: 33px;
   padding-top: 80px;
   margin: 0 auto;
 
   @media screen and (min-width: 576px) {
-    width: 576px;
+    width: 510px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 992px) {
-    width: 992px;
+    width: 690px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -66,6 +60,7 @@ p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 50px;
+  letter-spacing: 0em;
 }
 
 .link {

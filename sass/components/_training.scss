@@ -1,8 +1,8 @@
-.header {
+.projects {
   background-color: aquamarine;
 }
 
-.hero {
+.contacts {
   background-color: palevioletred;
 }
 
@@ -10,8 +10,20 @@
   background-color: slateblue;
 }
 
+.partners {
+  background-color: greenyellow;
+}
+
+.form {
+  background-color: royalblue;
+}
+
 *,
 *::before,
 *::after {
   outline: 1px solid tomato;
+}
+
+.fixed-panel .social-icon {
+  opacity: 0.6;
 }

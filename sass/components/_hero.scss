@@ -1,6 +1,22 @@
 .hero-container {
   padding-bottom: 107px;
   padding-top: 107px;
+  height: 510px;
+
+  @media screen and (min-width: 768px) {
+    padding: 169px 114px 252px;
+    height: 717px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 232px 261px 365px 191px;
+    height: 893px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 190px 45px 208px 45px;
+    height: 968px;
+  }
 }
 
 .hero-title {
@@ -26,4 +42,72 @@
   text-transform: uppercase;
 
   padding: 13px 47px;
+}
+
+.header-hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(51, 51, 51, 0.85),
+      rgba(51, 51, 51, 0.85)
+    ),
+    url(../images/main/hero-background-mobile.jpg);
+
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(51, 51, 51, 0.85),
+        rgba(51, 51, 51, 0.85)
+      ),
+      url(../images/main/hero-background-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 992px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(51, 51, 51, 0.85),
+        rgba(51, 51, 51, 0.85)
+      ),
+      url(../images/main/hero-background-largetablet.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(51, 51, 51, 0.85),
+          rgba(51, 51, 51, 0.85)
+        ),
+        url(../images/main/hero-background-largetablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(51, 51, 51, 0.85),
+        rgba(51, 51, 51, 0.85)
+      ),
+      url(../images/main/hero-background-desktop.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(51, 51, 51, 0.85),
+          rgba(51, 51, 51, 0.85)
+        ),
+        url(../images/main/hero-background-desktop@2x.jpg);
+    }
+  }
 }
