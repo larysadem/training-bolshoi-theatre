@@ -2,16 +2,17 @@
   padding-bottom: 80px;
 }
 
+.projects-list .project-link {
+  width: 442px;
+  height: 550px;
+  position: relative;
+}
+
 .project-link {
   color: $white;
 }
 
-.projects-list .item {
-  width: 442px;
-  position: relative;
-}
-
-.projects-list .item::after {
+.projects-list .project-link::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -26,13 +27,13 @@
   );
 }
 
-.projects-list .item:hover::after,
-.projects-list .item:focus::after {
+.projects-list .project-link:hover::after,
+.projects-list .project-link:focus::after {
   background: none;
 }
 
-.projects-list .item:hover:before,
-.projects-list .item:focus:before {
+.projects-list .project-link:hover:before,
+.projects-list .project-link:focus:before {
   content: "";
   width: 100px;
   height: 100px;
@@ -95,9 +96,9 @@
   transform-origin: bottom left;
 }
 
-.projects-list .item:hover .project-name,
-.projects-list .item:focus .project-name,
-.projects-list .item:hover .project-date,
-.projects-list .item:focus .project-date {
+.projects-list .project-link:hover .project-name,
+.projects-list .project-link:focus .project-name,
+.projects-list .project-link:hover .project-date,
+.projects-list .project-link:focus .project-date {
   display: none;
 }
